@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>📝 Notes App</h1>
+            <p>Save your thoughts instantly</p>
+        </header>
+
+        <!-- Controls -->
+        <section class="controls">
+
+            <input type="text" id="titleInput" placeholder="Note title">
+            <textarea id="textInput" placeholder="Write your note..."></textarea>
+
+            <select id="colorSelect">
+                <option value="yellow">Yellow</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="pink">Pink</option>
+            </select>
+
+            <button id="addBtn">Add Note</button>
+
+        </section>
+
+        <!-- Search + Sort -->
+        <section class="top-bar">
+
+            <input type="text" id="searchInput" placeholder="Search notes...">
+
+            <select id="sortSelect">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="az">A - Z</option>
+            </select>
+
+            <button id="clearAll">Clear All</button>
+
+        </section>
+
+        <!-- Notes -->
+        <section id="notesContainer" class="notes"></section>
+
+        <!-- Empty State -->
+        <p id="emptyState">No notes yet. Create your first note 🚀</p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
